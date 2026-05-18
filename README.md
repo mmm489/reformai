@@ -59,8 +59,8 @@ Open each URL in a browser. They should load with proper styling. If the CSS doe
 
 Edit each `.html` file and replace:
 
-- `privacy@airemodelapp.com` → your real privacy contact email
-- `support@airemodelapp.com` → your real support email
+- `[REPLACE_WITH_YOUR_EMAIL]` → your real privacy contact email
+- `[REPLACE_WITH_YOUR_EMAIL]` → your real support email
 - `Marc Montane Marti` → if you want a different legal name / company
 - `Barcelona, Spain` in `terms.html` → your real city if different
 - "Download on the App Store" CTA on `index.html` → real App Store URL once your app is live
@@ -80,11 +80,11 @@ GitHub Pages re-deploys automatically in ~30 seconds.
 
 ## Later: connect a custom domain
 
-When you buy `airemodelapp.com`:
+When you buy `yourdomain.com`:
 
-1. Add a file named `CNAME` to this folder containing `airemodelapp.com`.
+1. Add a file named `CNAME` to this folder containing `yourdomain.com`.
 2. In Namecheap (or wherever the domain is): add a CNAME record pointing `www` to `<YOUR_GH_USER>.github.io`, and ALIAS / ANAME for the apex to GitHub Pages IPs (see GitHub docs).
-3. In GitHub repo Settings → Pages, paste `airemodelapp.com` as the custom domain.
+3. In GitHub repo Settings → Pages, paste `yourdomain.com` as the custom domain.
 4. Enable "Enforce HTTPS" once the certificate is issued (~10 min).
 
-Then your URLs become `https://airemodelapp.com/privacy.html` etc.
+Then your URLs become `https://mmm489.github.io/reformai/privacy.html.html` etc.
