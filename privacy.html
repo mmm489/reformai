@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Reform AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a href="index.html" class="brand">Reform AI</a>
+      <nav>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Privacy Policy</h1>
+    <p class="muted">Last updated: May 8, 2026</p>
+
+    <p>This Privacy Policy explains how <strong>Reform AI</strong> ("we", "the App", "the Service") collects, uses, and shares information when you use our iOS application.</p>
+    <p>By using the App you agree to this Policy. If you do not agree, please do not use the App.</p>
+
+    <h2>1. Who we are</h2>
+    <p>The App is operated by <strong>Marc Montane Marti</strong>, based in Spain.</p>
+    <p>For any privacy-related question, contact us at: <a href="mailto:privacy@airemodelapp.com">privacy@airemodelapp.com</a></p>
+
+    <h2>2. What we collect</h2>
+
+    <h3>2.1 Account data (required to use the App)</h3>
+    <p>When you sign in with <strong>Apple ID (Sign in with Apple)</strong>, we receive:</p>
+    <ul>
+      <li>A unique anonymous user identifier (managed by Apple).</li>
+      <li>An email address — either your real email or a private relay email, depending on your choice.</li>
+      <li>Your name (optional, only the first time).</li>
+    </ul>
+    <p>We never see your Apple ID password.</p>
+
+    <h3>2.2 Content you upload</h3>
+    <ul>
+      <li><strong>Photos of rooms</strong> you take or pick from your photo library. These are uploaded to our backend and to our AI provider (see §4). We store them only as long as needed to deliver the result and your history.</li>
+      <li><strong>Generated images</strong> produced by the AI from your photos.</li>
+      <li><strong>Optional text prompts</strong> you write in the "Additional details" field.</li>
+    </ul>
+
+    <h3>2.3 Subscription data</h3>
+    <p>If you subscribe to Reform AI Pro, <strong>Apple</strong> processes the payment via the App Store. We never see or store your payment details. We only receive a confirmation that your subscription is active or expired, via Apple's StoreKit framework.</p>
+
+    <h3>2.4 Usage data (only if analytics is enabled)</h3>
+    <p>If analytics is enabled in a future build, we use <strong>PostHog</strong> to collect:</p>
+    <ul>
+      <li>Anonymous events (e.g. "generation started", "paywall shown").</li>
+      <li>Device model, OS version, app version, locale.</li>
+      <li>The user identifier so we can group events per user.</li>
+    </ul>
+    <p>We do <strong>not</strong> use this data for advertising or to track you across other apps.</p>
+
+    <h3>2.5 Diagnostics</h3>
+    <p>We do not currently send custom crash reports. Apple may share aggregated, anonymous crash data with us via App Store Connect if you have enabled "Share With App Developers" in iOS Settings → Privacy → Analytics.</p>
+
+    <h2>3. How we use your data</h2>
+    <p>We use the data above strictly to:</p>
+    <ul>
+      <li>Authenticate you and keep your session.</li>
+      <li>Generate room redesigns using AI.</li>
+      <li>Save your generation history so you can revisit your designs.</li>
+      <li>Process subscriptions and verify entitlements.</li>
+      <li>Improve the App (debugging, understanding usage if analytics is enabled).</li>
+    </ul>
+    <p>We do <strong>not</strong> sell your data. We do <strong>not</strong> show ads. We do <strong>not</strong> use your photos to train AI models.</p>
+
+    <h2>4. Who we share data with (subprocessors)</h2>
+    <table>
+      <thead>
+        <tr><th>Provider</th><th>Purpose</th><th>Storage region</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Apple (Sign in with Apple, StoreKit, App Store)</td><td>Authentication and payments</td><td>Apple infrastructure</td></tr>
+        <tr><td>Supabase</td><td>Backend, database, file storage</td><td>EU (Ireland)</td></tr>
+        <tr><td>Replicate</td><td>AI image generation (model <code>google/nano-banana</code>)</td><td>United States</td></tr>
+      </tbody>
+    </table>
+    <p>When you generate a redesign, your photo is sent through a short-lived signed URL to Replicate which runs the AI model and returns the result.</p>
+    <p>Replicate's policy: <a href="https://replicate.com/privacy">replicate.com/privacy</a> · Supabase's policy: <a href="https://supabase.com/privacy">supabase.com/privacy</a></p>
+    <p>We do not share your data with any other third parties unless legally required.</p>
+
+    <h2>5. International transfers</h2>
+    <p>Your data may be processed in the European Union (Supabase) and in the United States (Replicate, Apple). Where required by GDPR, transfers rely on Standard Contractual Clauses approved by the European Commission.</p>
+
+    <h2>6. How long we keep your data</h2>
+    <table>
+      <thead><tr><th>Data</th><th>Retention</th></tr></thead>
+      <tbody>
+        <tr><td>Account (auth user, profile)</td><td>Until you request deletion</td></tr>
+        <tr><td>Original photos uploaded</td><td>Up to 90 days, then deleted</td></tr>
+        <tr><td>Generated images</td><td>Until you delete them or request account deletion</td></tr>
+        <tr><td>Subscription status</td><td>Until you cancel + 12 months for accounting</td></tr>
+        <tr><td>Analytics events (if enabled)</td><td>12 months</td></tr>
+      </tbody>
+    </table>
+
+    <h2>7. Your rights</h2>
+    <p>Wherever you are, you can:</p>
+    <ul>
+      <li><strong>Access</strong> the data we have about you.</li>
+      <li><strong>Correct</strong> inaccurate data.</li>
+      <li><strong>Delete</strong> your account and all associated data.</li>
+      <li><strong>Export</strong> a copy of your data.</li>
+      <li><strong>Object</strong> to our processing of your data.</li>
+    </ul>
+    <p>To exercise any of these rights, email <a href="mailto:privacy@airemodelapp.com">privacy@airemodelapp.com</a>. We will respond within 30 days.</p>
+    <p>If you are in the EU, you can also lodge a complaint with your local Data Protection Authority. In Spain: <a href="https://www.aepd.es">AEPD</a>.</p>
+
+    <h2>8. Children</h2>
+    <p>The App is rated <strong>4+</strong> but is not directed at children under 13. We do not knowingly collect data from children under 13. If you believe a child has used the App, contact us and we will delete the account.</p>
+
+    <h2>9. Security</h2>
+    <ul>
+      <li>All connections use HTTPS / TLS 1.2+.</li>
+      <li>Backend access requires a JWT token issued by Apple Sign-In.</li>
+      <li>Storage buckets enforce Row-Level Security so a user can only read their own files.</li>
+      <li>Service role keys are never shipped in the app and are kept on the backend.</li>
+    </ul>
+    <p>No system is 100% secure. If we discover a breach affecting your data, we will notify you within 72 hours per GDPR.</p>
+
+    <h2>10. Changes to this Policy</h2>
+    <p>We may update this Policy from time to time. We will post the new version on this page and update the "Last updated" date. Material changes will be notified inside the App.</p>
+
+    <h2>11. Contact</h2>
+    <p>Marc Montane Marti<br>Email: <a href="mailto:privacy@airemodelapp.com">privacy@airemodelapp.com</a></p>
+  </main>
+
+  <footer class="site-footer">
+    © 2026 Marc Montane Marti ·
+    <a href="privacy.html">Privacy</a> ·
+    <a href="terms.html">Terms</a> ·
+    <a href="support.html">Support</a>
+  </footer>
+</body>
+</html>

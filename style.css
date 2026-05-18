@@ -1,0 +1,203 @@
+/* Shared stylesheet for AI Remodel marketing pages */
+:root {
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --fg-muted: #555;
+  --accent: #5856d6;
+  --border: #e5e5e5;
+  --max-width: 720px;
+  --radius: 12px;
+  --font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111;
+    --fg: #f2f2f2;
+    --fg-muted: #aaa;
+    --border: #2a2a2a;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--fg);
+  background: var(--bg);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+
+header.site-header {
+  border-bottom: 1px solid var(--border);
+  padding: 16px 24px;
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 10;
+}
+
+header.site-header .inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+header.site-header a.brand {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--fg);
+  text-decoration: none;
+}
+
+header.site-header nav a {
+  color: var(--fg-muted);
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+header.site-header nav a:hover { color: var(--accent); }
+
+h1 {
+  font-family: var(--font-display);
+  font-size: 36px;
+  line-height: 1.2;
+  margin: 0 0 8px;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  line-height: 1.3;
+  margin: 40px 0 12px;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 24px 0 8px;
+}
+
+p, ul, ol {
+  margin: 0 0 14px;
+  color: var(--fg);
+}
+
+ul, ol { padding-left: 22px; }
+
+li + li { margin-top: 6px; }
+
+a { color: var(--accent); }
+
+.muted { color: var(--fg-muted); font-size: 15px; }
+
+.lead {
+  font-size: 19px;
+  color: var(--fg-muted);
+  margin-bottom: 32px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 15px;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+th {
+  font-weight: 600;
+  background: rgba(0,0,0,0.02);
+}
+
+@media (prefers-color-scheme: dark) {
+  th { background: rgba(255,255,255,0.03); }
+}
+
+code {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  background: rgba(0,0,0,0.05);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+@media (prefers-color-scheme: dark) {
+  code { background: rgba(255,255,255,0.08); }
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 32px 0;
+}
+
+footer.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 32px 24px;
+  text-align: center;
+  color: var(--fg-muted);
+  font-size: 14px;
+}
+
+footer.site-footer a {
+  color: var(--fg-muted);
+  margin: 0 10px;
+}
+
+.hero {
+  text-align: center;
+  padding: 64px 0 32px;
+}
+
+.hero .badge {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #ff6b6b, #ffa94d, #ffd43b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.cta {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 24px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .cta { background: #fff; color: #000; }
+}
