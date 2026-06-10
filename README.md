@@ -59,9 +59,9 @@ Open each URL in a browser. They should load with proper styling. If the CSS doe
 
 Edit each `.html` file and replace:
 
-- `[REPLACE_WITH_YOUR_EMAIL]` → your real privacy contact email
-- `[REPLACE_WITH_YOUR_EMAIL]` → your real support email
-- `Marc Montane Marti` → if you want a different legal name / company
+- `contact@profitcentral.net` → your real privacy contact email
+- `contact@profitcentral.net` → your real support email
+- `Profitcentral SLU` → if you want a different legal name / company
 - `Barcelona, Spain` in `terms.html` → your real city if different
 - "Download on the App Store" CTA on `index.html` → real App Store URL once your app is live
 
@@ -78,13 +78,36 @@ git push
 
 GitHub Pages re-deploys automatically in ~30 seconds.
 
-## Later: connect a custom domain
+## Custom domain
 
-When you buy `yourdomain.com`:
+The site is served from **reformaiapp.com** (custom domain bought on GoDaddy).
 
-1. Add a file named `CNAME` to this folder containing `yourdomain.com`.
-2. In Namecheap (or wherever the domain is): add a CNAME record pointing `www` to `<YOUR_GH_USER>.github.io`, and ALIAS / ANAME for the apex to GitHub Pages IPs (see GitHub docs).
-3. In GitHub repo Settings → Pages, paste `yourdomain.com` as the custom domain.
-4. Enable "Enforce HTTPS" once the certificate is issued (~10 min).
+The `CNAME` file in this folder contains the domain — do not delete it.
 
-Then your URLs become `https://mmm489.github.io/reformai/privacy.html.html` etc.
+### Final URLs
+
+| Page | URL |
+|---|---|
+| Landing | https://reformaiapp.com/ |
+| Privacy Policy | https://reformaiapp.com/privacy.html |
+| Terms of Service | https://reformaiapp.com/terms.html |
+| Support | https://reformaiapp.com/support.html |
+
+### DNS records on GoDaddy
+
+Apex `@` → 4 A records to GitHub Pages IPs:
+
+```
+185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153
+```
+
+`www` → CNAME to `mmm489.github.io`
+
+### GitHub Pages settings
+
+In repo Settings → Pages:
+- Custom domain: `reformaiapp.com`
+- Enforce HTTPS: enabled
